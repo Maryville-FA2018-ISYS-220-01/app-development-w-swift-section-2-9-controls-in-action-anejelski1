@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var text: UITextField!
+
+    @IBAction func cleartextButton(_ sender: Any) {
+        label.text = ""
+    }
+    @IBAction func settextButton(_ sender: Any) {
+        label.text = text.text
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
